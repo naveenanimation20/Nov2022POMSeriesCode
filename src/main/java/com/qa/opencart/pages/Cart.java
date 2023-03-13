@@ -8,5 +8,6 @@ public class Cart {
 	
 	int p = 10;
 	
+	int q = 20;
 
 }
