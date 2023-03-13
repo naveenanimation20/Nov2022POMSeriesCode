@@ -5,6 +5,7 @@ public class Mail {
 	public void sendMail() {
 
 		System.out.println("mail sent --- Naveen");
+		System.out.println("mail code is done --- Naveen");
 
 	}
 
@@ -13,3 +14,5 @@ public class Mail {
 	}
 
 }
+
+
