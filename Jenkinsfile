@@ -32,6 +32,8 @@ pipeline
                 echo("deploy to qa")
             }
         }
+        
+        
                 
         stage('Regression Automation Test') {
             steps {

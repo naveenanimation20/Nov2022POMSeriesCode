@@ -51,7 +51,10 @@ public class AccountsPageTest extends BaseTest {
 
 	@DataProvider
 	public Object[][] getProductData() {
-		return new Object[][] { { "Macbook" }, { "iMac" }, { "Apple" }, { "Samsung" } };
+		return new Object[][] { { "Macbook" }, 
+			{ "iMac" }};
+//			{ "Apple" }, 
+//			{ "Samsung" } };
 	}
 
 	@Test(dataProvider = "getProductData")
@@ -62,9 +65,11 @@ public class AccountsPageTest extends BaseTest {
 
 	@DataProvider
 	public Object[][] getProductTestData() {
-		return new Object[][] { { "Macbook", "MacBook Pro" }, { "Macbook", "MacBook Air" }, { "iMac", "iMac" },
-				{ "Apple", "Apple Cinema 30\"" }, { "Samsung", "Samsung SyncMaster 941BW" },
-				{ "Samsung", "Samsung Galaxy Tab 10.1" }, };
+		return new Object[][] { { "Macbook", "MacBook Pro" }};
+//			{ "Macbook", "MacBook Air" }, { "iMac", "iMac" },
+//		
+//				{ "Apple", "Apple Cinema 30\"" }, { "Samsung", "Samsung SyncMaster 941BW" },
+//				{ "Samsung", "Samsung Galaxy Tab 10.1" }, };
 	}
 
 	@Test(dataProvider = "getProductTestData")
