@@ -1,0 +1,8 @@
+2023-03-23 15:02:18 INFO  AccountsPageTest:54 - This is a log message from accPageHeadersCountTest
+2023-03-23 15:02:18 INFO  AccountsPageTest:64 - This is a log message from accPageHeadersValueTest
+2023-03-23 15:02:19 INFO  AccountsPageTest:28 - This is a log message from loginTest
+2023-03-23 15:02:19 INFO  AccountsPageTest:37 - This is a log message from accPageURLTest
+2023-03-23 15:02:19 INFO  AccountsPageTest:46 - This is a log message from isLogoutLinkExistTest
+2023-03-23 15:02:19 INFO  AccountsPageTest:83 - This is a log message from searchProductCountTest
+2023-03-23 15:02:21 INFO  AccountsPageTest:83 - This is a log message from searchProductCountTest
+2023-03-23 15:02:24 INFO  AccountsPageTest:101 - This is a log message from searchProductTest

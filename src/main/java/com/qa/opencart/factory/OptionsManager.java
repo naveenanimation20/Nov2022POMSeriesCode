@@ -18,8 +18,8 @@ public class OptionsManager {
 	}
 
 	public ChromeOptions getChromeOptions() {
-		co = new ChromeOptions();
-		co.addArguments("--remote-allow-origins=*");
+//		co = new ChromeOptions();
+//		co.addArguments("--remote-allow-origins=*");
 
 		if (Boolean.parseBoolean(prop.getProperty("remote"))) {
 			co.setBrowserVersion(prop.getProperty("browserversion"));
@@ -39,6 +39,7 @@ public class OptionsManager {
 	}
 
 	public FirefoxOptions getFirefoxOptions() {
+		System.out.println("firefox options");
 		fo = new FirefoxOptions();
 		if (Boolean.parseBoolean(prop.getProperty("headless").trim()))
 			fo.addArguments("--headless");
