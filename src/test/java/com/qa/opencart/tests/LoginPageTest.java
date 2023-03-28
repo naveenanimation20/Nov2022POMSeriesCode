@@ -30,6 +30,7 @@ public class LoginPageTest extends BaseTest {
         logger.info("This is a log message from loginPageTitleTest");
 
 		String actualTitle = loginPage.getLoginPageTitle();
+		logger.info("actual login page title: " + actualTitle);
 		Assert.assertEquals(actualTitle, AppConstants.LOGIN_PAGE_TITLE_VALUE);
 	}
 

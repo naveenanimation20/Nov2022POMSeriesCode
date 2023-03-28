@@ -1,4 +1,4 @@
-package com.qa.opencart.factory;
+package com.qa.opencart.logging;
 
 import java.io.File;
 
