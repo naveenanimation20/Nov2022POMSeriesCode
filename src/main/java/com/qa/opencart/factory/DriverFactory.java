@@ -9,6 +9,7 @@ import java.net.URL;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.MDC;
 import org.aspectj.util.FileUtil;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -31,8 +32,9 @@ public class DriverFactory {
 
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
 	
-   // private final Logger logger = Logger.getLogger(DriverFactory.class);
+    //private final Logger logger = Logger.getLogger(DriverFactory.class);
 
+    
 
 	/**
 	 * this method is initializing the driver on the basis of given browser name
@@ -41,6 +43,7 @@ public class DriverFactory {
 	 * @return this returns the driver
 	 */
 	public WebDriver initDriver(Properties prop) {
+
 
 		optionsManager = new OptionsManager(prop);
 

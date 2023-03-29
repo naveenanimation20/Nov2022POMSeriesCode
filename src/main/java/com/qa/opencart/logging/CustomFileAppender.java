@@ -7,6 +7,7 @@ import org.apache.log4j.spi.LoggingEvent;
 
 /**
  * 
+ * 
  * @author naveenautomationlabs
  *
  */
@@ -14,6 +15,7 @@ public class CustomFileAppender extends FileAppender {
 
 	@Override
 	public void append(LoggingEvent event) {
+		String driverFactoryClassName = event.getMDC("DriverFactory").toString();
 		String testClassName = event.getMDC("testClassName").toString();
 		String logsFolderPath = "logs";
 		File logsFolder = new File(logsFolderPath);
@@ -24,6 +26,8 @@ public class CustomFileAppender extends FileAppender {
 		}
 
 		setFile(logsFolderPath + "/" + testClassName + ".log");
+		setFile(logsFolderPath + "/" + driverFactoryClassName + ".log");
+
 		activateOptions();
 		super.append(event);
 
