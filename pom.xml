@@ -142,15 +142,7 @@
 
 			</plugin>
 			
-			<plugin>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-maven</artifactId>
-            <version>2.10.0</version>
-            <configuration>
-                <reportVersion>2.13.6</reportVersion>
-                <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
-            </configuration>
-        </plugin>
+
 
 
 <!-- 			<plugin>
@@ -183,15 +175,22 @@
 			</plugin> -->
 
 
-
-
-
-
-
 		</plugins>
 	</build>
 
-
+<reporting>
+        <excludeDefaults>true</excludeDefaults>
+        <plugins>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.10.0</version>
+                <configuration>
+                    <reportVersion>${allure.version}</reportVersion>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
 
 
 </project>
