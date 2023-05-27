@@ -28,7 +28,7 @@ jobs:
         restore-keys: ${{ runner.os }}-m2
 
     - name: Run tests with Allure reporting
-      run: mvn clean test
+      run: mvn clean install
 
     - name: Generate Allure report
       run: mvn allure:report
