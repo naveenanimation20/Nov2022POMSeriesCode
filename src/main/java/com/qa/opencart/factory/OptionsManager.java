@@ -20,7 +20,7 @@ public class OptionsManager {
 	public ChromeOptions getChromeOptions() {
 		co = new ChromeOptions();
 //		co.addArguments("--remote-allow-origins=*");
-		options.addArguments("--window-size=1920,1080");
+		co.addArguments("--window-size=1920,1080");
             co.addArguments("--no-sandbox");
             co.addArguments("--headless");
             co.addArguments("--disable-gpu");
