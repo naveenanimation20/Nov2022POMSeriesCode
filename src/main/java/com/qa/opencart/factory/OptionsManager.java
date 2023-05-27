@@ -20,6 +20,18 @@ public class OptionsManager {
 	public ChromeOptions getChromeOptions() {
 		co = new ChromeOptions();
 //		co.addArguments("--remote-allow-origins=*");
+		options.addArguments("--window-size=1920,1080");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--headless");
+            options.addArguments("--disable-gpu");
+            options.addArguments("--disable-crash-reporter");
+            options.addArguments("--disable-extensions");
+            options.addArguments("--disable-in-process-stack-traces");
+            options.addArguments("--disable-logging");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--log-level=3");
+            options.addArguments("--output=/dev/null");
+            options.addArguments("ignore-certificate-errors");
 
 		if (Boolean.parseBoolean(prop.getProperty("remote"))) {
 			co.setBrowserVersion(prop.getProperty("browserversion"));
