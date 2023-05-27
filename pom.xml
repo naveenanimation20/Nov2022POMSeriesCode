@@ -148,6 +148,7 @@
             <version>2.10.0</version>
             <configuration>
                 <reportVersion>2.13.6</reportVersion>
+                <resultsDirectory>${project.build.directory}/Nov2022POMSeriesCode/target/allure-results</resultsDirectory>
             </configuration>
         </plugin>
 
