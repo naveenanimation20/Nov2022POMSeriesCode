@@ -19,7 +19,7 @@ import io.qameta.allure.Story;
 @Story("US-Login: 101: design login page features for open cart")
 public class LoginPageTest extends BaseTest {
 	
-    private final Logger logger = Logger.getLogger(LoginPageTest.class);
+   // private final Logger logger = Logger.getLogger(LoginPageTest.class);
 
 
 	@Severity(SeverityLevel.TRIVIAL)
@@ -27,10 +27,10 @@ public class LoginPageTest extends BaseTest {
 	@Test(priority = 1)
 	public void loginPageTitleTest() {
         MDC.put("testClassName", this.getClass().getSimpleName());
-        logger.info("This is a log message from loginPageTitleTest");
+        //logger.info("This is a log message from loginPageTitleTest");
 
 		String actualTitle = loginPage.getLoginPageTitle();
-		logger.info("actual login page title: " + actualTitle);
+		//logger.info("actual login page title: " + actualTitle);
 		Assert.assertEquals(actualTitle, AppConstants.LOGIN_PAGE_TITLE_VALUE);
 	}
 
@@ -39,7 +39,7 @@ public class LoginPageTest extends BaseTest {
 	@Test(priority = 2)
 	public void loginPageURLTest() {
         MDC.put("testClassName", this.getClass().getSimpleName());
-        logger.info("This is a log message from loginPageURLTest");
+        //logger.info("This is a log message from loginPageURLTest");
 
 		String actualURL = loginPage.getLoginPageURL();
 		Assert.assertTrue(actualURL.contains(AppConstants.LOGIN_PAGE_URL_FRACTION_VALUE));
@@ -50,7 +50,7 @@ public class LoginPageTest extends BaseTest {
 	@Test(priority = 3)
 	public void forgotPwdLinkExistTest() {
         MDC.put("testClassName", this.getClass().getSimpleName());
-        logger.info("This is a log message from forgotPwdLinkExistTest");
+        //logger.info("This is a log message from forgotPwdLinkExistTest");
 
 		Assert.assertTrue(loginPage.isForgotPwdLinkExist());
 	}
@@ -60,7 +60,7 @@ public class LoginPageTest extends BaseTest {
 	@Test(priority = 4)
 	public void loginTest() {
         MDC.put("testClassName", this.getClass().getSimpleName());
-        logger.info("This is a log message from loginTest");
+        //logger.info("This is a log message from loginTest");
 
 		accPage = loginPage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 		Assert.assertTrue(accPage.isLogoutLinkExist());
