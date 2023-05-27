@@ -13,6 +13,9 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
+import com.qa.opencart.listeners.TestAllureListener;
+import org.testng.annotations.Listeners;
+
 
 @Listeners(TestAllureListener.class)
 @Epic("EPIC - 100: design login for open cart app")
