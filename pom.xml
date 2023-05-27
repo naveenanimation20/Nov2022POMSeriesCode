@@ -14,12 +14,12 @@
 		<aspectj.version>1.9.5</aspectj.version>
 	</properties>
 
-	<distributionManagement>
+<!-- 	<distributionManagement>
 		<snapshotRepository>
 			<id>nexus-snapshots</id>
 			<url>http://admin:admin123@localhost:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
-	</distributionManagement>
+	</distributionManagement> -->
 
 	<dependencies>
 		<dependency>
@@ -143,7 +143,7 @@
 			</plugin>
 
 
-			<plugin>
+<!-- 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<version>3.3.0</version>
@@ -170,7 +170,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-deploy-plugin</artifactId>
 				<version>2.8.2</version>
-			</plugin>
+			</plugin> -->
 
 
 
