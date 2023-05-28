@@ -30,7 +30,7 @@
 		<parameter name="browserversion" value="112.0" />
 		<parameter name="testcasename" value="Product Info Page Test" />
 		<classes>
-			<class name="com.qa.opencart.tests.LoginPageTest"/>
+			<class name="com.qa.opencart.tests.ProductPageInfoTest"/>
 		</classes>
 	</test>
 
