@@ -189,6 +189,8 @@
                 <version>2.10.0</version>
                 <configuration>
                     <reportVersion>${allure.version}</reportVersion>
+		<resultsDirectory>${project.basedir}/allure-results</resultsDirectory>
+
                 </configuration>
             </plugin>
         </plugins>
