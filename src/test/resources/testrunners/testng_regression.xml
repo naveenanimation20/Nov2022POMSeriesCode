@@ -6,50 +6,51 @@
 
 
 	<listeners>
-<!-- 		<listener
-			class-name="com.qa.opencart.listeners.ExtentReportListener" /> -->
+		<!-- <listener class-name="com.qa.opencart.listeners.ExtentReportListener" 
+			/> -->
 		<listener
 			class-name="com.qa.opencart.listeners.TestAllureListener" />
 
-<!-- 		<listener
-			class-name="com.qa.opencart.listeners.AnnotationTransformer" /> -->
+		<!-- <listener class-name="com.qa.opencart.listeners.AnnotationTransformer" 
+			/> -->
 	</listeners>
 
-	<test name="Login Page Test_chrome_90.0">
+	<test name="Login Page Test_chrome">
 		<parameter name="browser" value="chrome" />
 		<parameter name="browserversion" value="90.0" />
 		<parameter name="testcasename" value="Login Page Test" />
-
-
-
 		<classes>
-			<class name="com.qa.opencart.tests.LoginPageTest" />
+			<class name="com.qa.opencart.tests.LoginPageTest"/>
 		</classes>
 	</test>
 
-<!-- 	 <test name="Login Page Test_chrome_109.0">
+
+	<test name="Product Info Page Test_chrome">
 		<parameter name="browser" value="chrome" />
-		<parameter name="browserversion" value="109.0" />
-		<parameter name="testcasename" value="Login Page Test" />
-
+		<parameter name="browserversion" value="112.0" />
+		<parameter name="testcasename" value="Product Info Page Test" />
 		<classes>
-			<class name="com.qa.opencart.tests.LoginPageTest" />
+			<class name="com.qa.opencart.tests.LoginPageTest"/>
 		</classes>
-	</test> -->
+	</test>
 
 
-
-	<test name="Accounts Page Test_chrome_79">
+	<test name="Register Page Test_chrome">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="90.0" />
+		<parameter name="testcasename" value="Register Page Test" />
+		<classes>
+			<class name="com.qa.opencart.tests.RegisterPageTest"/>
+		</classes>
+	</test>
+	
+	
+	<test name="Accounts Page Test_chrome">
 		<parameter name="browser" value="chrome" />
 		<parameter name="browserversion" value="112.0" />
 		<parameter name="testcasename" value="Accounts Page Test" />
-
 		<classes>
 			<class name="com.qa.opencart.tests.AccountsPageTest" />
 		</classes>
 	</test>
- 
-
-
-
-</suite>
+</suite>	
