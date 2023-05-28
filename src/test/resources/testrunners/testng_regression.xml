@@ -6,8 +6,7 @@
 
 
 	<listeners>
-		<!-- <listener class-name="com.qa.opencart.listeners.ExtentReportListener" 
-			/> -->
+		 <listener class-name="com.qa.opencart.listeners.ExtentReportListener"/> 
 		<listener
 			class-name="com.qa.opencart.listeners.TestAllureListener" />
 
