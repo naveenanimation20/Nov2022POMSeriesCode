@@ -44,3 +44,8 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
+      - name: Publish Extent Report
+        uses: actions/upload-artifact@v2
+        with:
+          name: Extent Report
+          path: reports/TestExecutionReport.html
